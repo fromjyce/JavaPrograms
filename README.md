@@ -1,2 +1,2 @@
 # Java Programs
-A collection of Java programs completed during my third semester, showcasing practical application of fundamental concepts such as control structures, object-oriented programming, and data structures.
+This repository contains the Java programs that I have completed and submitted for assignments and records during my third semester at college. The programs cover a wide range of topics, including core data types, control structures, arrays, methods, and file handling. Furthermore, I have included Java files that reflect my programming journey and the progress I have made thus far.
