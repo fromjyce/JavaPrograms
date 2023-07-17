@@ -12,41 +12,45 @@ If the type of the EB connection is commercial, calculate the amount to be paid 
     • 201 -500 units - Rs. 6 per unit 
     • 501 units - Rs. 7 per unit */
 import java.util.Scanner;
-public class ElectricityBill {
- static String Connectiontype() {
-     Scanner scan = new Scanner(System.in);
+public class EBBIll {
+	String ebtype;
+    int consumno;
+    String consumname;
+    int prevbill;
+    int currbill;
+    int units;
+    double totalbill;
+    Scanner scan = new Scanner(System.in);
+    String Connectiontype() {
      System.out.print("Enter the connection type (Commercial or Domestic): ");
      String ConType = scan.nextLine();
      return ConType;
  }
- static int ConsumerNo() {
-     Scanner scan = new Scanner(System.in);
+    int ConsumerNo() {
      System.out.print("\nEnter the Consumer Number: ");
      int ConNum = scan.nextInt();
      return ConNum;
- }
- static String ConsumerName() {
-     Scanner scan = new Scanner(System.in);
+    }
+    
+	String ConsumerName() {
      System.out.print("\nEnter the Consumer Name: " );
      String ConName = scan.nextLine();
      return ConName;
  }
- static int PreviousMonth() {
-     Scanner scan = new Scanner (System.in);
+	int PreviousMonth() {
      System.out.print("\nEnter the Units consumed in Previous Month: ");
      int PrevBill = scan.nextInt();
      return PrevBill;
  }
- static int CurrentMonth() {
-     Scanner scan = new Scanner(System.in);
+	int CurrentMonth() {
      System.out.print("\nEnter the Units consumed in Current Month: ");
      int CurrBill = scan.nextInt();
      return CurrBill;
  }
- static int UnitsConsumed(int prev, int curr) {
-     return Math.abs(prev-curr);
+	int UnitsConsumed() {
+     return Math.abs(prevbill-currbill);
  }
- static double CommercialCalc(int units) {
+	double CommercialCalc() {
      if (units <= 100) {
          return units * 2;
      } else if (units <= 200) {
@@ -56,9 +60,8 @@ public class ElectricityBill {
      } else {
          return  100 * 2 + 100 * 4.50+ 300 * 6 + (units - 500) * 7;
  }
-     return bill;
  }
- static double DomesticCalc(int units) {
+	double DomesticCalc() {
      if (units <= 100) {
         return  units * 1;
      } else if (units <= 200) {
@@ -68,34 +71,33 @@ public class ElectricityBill {
      } else {
         return  100 * 1 + 100 * 2.50+ 300 * 4 + (units - 500) * 6;
  }
-     return bill;
  }
- static void displayBill(int num, String name, String type, int prev, int curr, int units, double bill) {
+	void displayBill() {
      System.out.print("\n");
-     System.out.println("Consumer Number : " + num);
-     System.out.println("Consumer Name: " + name);
-     System.out.println("Type of EB: " + type);
-     System.out.println("Units Consumed in Previous Month: " + prev);
-     System.out.println("Units Consumed in Current Month: " + curr);
+     System.out.println("Consumer Number : " + consumno);
+     System.out.println("Consumer Name: " + consumname);
+     System.out.println("Type of EB: " + ebtype);
+     System.out.println("Units Consumed in Previous Month: " + prevbill);
+     System.out.println("Units Consumed in Current Month: " + currbill);
      System.out.println("Total Units: " + units);
-     System.out.println("Total Bill: " + bill);
+     System.out.println("Total Bill: " + totalbill);
  }
  public static void main(String[] args) {
-     double totalbill = 0.0;
      System.out.print("Welcome to Electricity Bill Calculator!!\n");
-     String ebtype = Connectiontype();
-     int consumno = ConsumerNo();
-     String consumname = ConsumerName();
-     int prevbill = PreviousMonth();
-     int currbill = CurrentMonth();
-     int unicon = UnitsConsumed(prevbill,currbill);
-     if (ebtype=="Commercial" || ebtype=="commercial" || ebtype=="COMMERCIAL") {
-         totalbill = CommercialCalc(unicon);
+     EBBIll eb = new EBBIll();
+     eb.ebtype = eb.Connectiontype();
+     eb.consumno = eb.ConsumerNo();
+     eb.consumname = eb.ConsumerName();
+     eb.prevbill = eb.PreviousMonth();
+     eb.currbill = eb.CurrentMonth();
+     eb.units = eb.UnitsConsumed();
+     if (eb.ebtype=="Commercial" || eb.ebtype=="commercial" || eb.ebtype=="COMMERCIAL") {
+         eb.totalbill = eb.CommercialCalc();
      }
      else {
-         totalbill = DomesticCalc(unicon);
+         eb.totalbill = eb.DomesticCalc();
      }
-     displayBill(consumno,consumname,ebtype,prevbill,currbill,unicon,totalbill);
+     eb.displayBill();
      
  }
 }
