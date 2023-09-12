@@ -12,7 +12,7 @@ If the type of the EB connection is commercial, calculate the amount to be paid 
     • 201 -500 units - Rs. 6 per unit 
     • 501 units - Rs. 7 per unit */
 import java.util.Scanner;
-public class EBBIll {
+public class ElectricityBill {
 	String ebtype;
     int consumno;
     String consumname;
@@ -84,7 +84,7 @@ public class EBBIll {
  }
  public static void main(String[] args) {
      System.out.print("Welcome to Electricity Bill Calculator!!\n");
-     EBBIll eb = new EBBIll();
+     ElectricityBill eb = new ElectricityBill();
      eb.ebtype = eb.Connectiontype();
      eb.consumno = eb.ConsumerNo();
      eb.consumname = eb.ConsumerName();
