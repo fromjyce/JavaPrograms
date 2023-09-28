@@ -1,3 +1,6 @@
+/*Design a Java interface for ADT Stack. Implement this interface using array. 
+Provide necessary exception handling in both the implementations. */
+
 import java.util.*;
 
 public class StackArray {
