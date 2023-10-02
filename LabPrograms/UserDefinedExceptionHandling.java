@@ -1,5 +1,4 @@
 import java.util.*;
-import java.lang.*;
 
 public class UserDefinedExceptionHandling {
 
@@ -18,6 +17,7 @@ public class UserDefinedExceptionHandling {
         int age = scan.nextInt();
         scan.nextLine();
         validate(age);
+        scan.close();
         } catch (InValidAgeError ex) {
             System.out.println("Exception Occured: " + ex);
         }
