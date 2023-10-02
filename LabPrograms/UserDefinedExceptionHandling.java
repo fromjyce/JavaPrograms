@@ -1,3 +1,6 @@
+/*Write a Java program to implement user defined exception handling. */
+
+
 import java.util.*;
 
 public class UserDefinedExceptionHandling {
