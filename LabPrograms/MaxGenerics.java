@@ -1,3 +1,5 @@
+/*Write a java program to find the maximum value from the given type of elements using a generic function. */
+
 public class MaxGenerics {
   
   public static <T extends Comparable<T>> T maximum(T x, T y, T z) {
