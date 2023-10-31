@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.io.*;
 
-public class ProblemOne {
+public class ReadFilePrintNumberLine {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the filename with extension: ");
