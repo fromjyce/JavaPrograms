@@ -1,3 +1,5 @@
+/*Display Mouse Pointer Coordinates */
+
 import java.awt.MouseInfo;
 import java.awt.Point;
 
