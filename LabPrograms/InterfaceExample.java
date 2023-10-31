@@ -25,7 +25,7 @@ class Helicopter implements Flyable{
 	}
 }
 
-public class ProblemTwo {
+public class InterfaceExample {
 	public static void main(String[] args) {
 		Spacecraft spc = new Spacecraft();
 		Airplane air = new Airplane();
