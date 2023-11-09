@@ -4,7 +4,7 @@
 import java.util.Queue;
 import java.util.LinkedList;
 
-class Main {
+public class QueuesLinkedList {
 
     public static void main(String[] args) {
         // Creating Queue using the LinkedList class
