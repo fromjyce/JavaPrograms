@@ -1,4 +1,4 @@
-/*Write a java program to create q base class Sports with a method called play(). Create three subclasses football, basketball and rugby. Override the play() method in each subclass to play  */
+/*Write a java program to create q base class Sports with a method called play(). Create three subclasses football, basketball and rugby. Override the play() method in each subclass to play a specific statement for each sport */
 
 
 
