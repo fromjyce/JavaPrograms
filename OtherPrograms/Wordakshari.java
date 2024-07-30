@@ -16,9 +16,8 @@ public class Wordakshari {
             for (int i = 1; i < words.size(); i++) {
                 String ele = words.get(i);
                 String pre_ele = words.get(i - 1);
-                char lastChar = pre_ele.charAt(pre_ele.length() - 1);
                 
-                if (ele.charAt(0) == lastChar) {
+                if (ele.charAt(0) == pre_ele.charAt(pre_ele.length() - 1)) {
                     System.out.println(ele);
                 } else {
                     break;
