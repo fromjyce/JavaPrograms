@@ -46,6 +46,6 @@ public class BusesQueue {
         if (c > 0) {
             b++;
         }
-
+        System.out.print(b);
     }
 }
