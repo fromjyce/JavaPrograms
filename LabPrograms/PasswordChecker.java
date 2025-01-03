@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PasswordValidator {
+public class PasswordChecker {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -12,6 +12,8 @@ public class PasswordValidator {
         } else {
             System.out.println("Not a Perfect Password");
         }
+
+        scanner.close();
     }
 
     public static boolean isPerfectPassword(String password) {
