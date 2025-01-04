@@ -19,7 +19,7 @@ public class DiceRollingGame {
             
             if (guess < 2 || guess > 12) {
                 System.out.println("Invalid guess. Please enter a number between 2 and 12.");
-                attempts--; // Don't count invalid attempts
+                attempts--; 
                 continue;
             }
             
