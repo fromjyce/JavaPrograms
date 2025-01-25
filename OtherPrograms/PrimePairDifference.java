@@ -14,7 +14,7 @@ public class PrimePairDifference {
     public static int getPrimePairs(int lower, int higher) {
         int count = 0;
         for (int i = lower; i <= higher; i++){
-            if (isPrime(i) && isPrime(i + 6)) {
+            if (isPrime(i) && isPrime(i + 6) && (i+6) <= higher) {
                 count += 1;
             }
         }
