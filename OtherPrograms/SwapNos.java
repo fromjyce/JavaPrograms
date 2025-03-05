@@ -16,6 +16,7 @@ public class SwapNos {
         b = temp;
         System.out.println("\nFirst Number is : "+ a);
         System.out.println("Second Number is : " + b);
+        scan.close();
     }
     
 }

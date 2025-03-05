@@ -19,6 +19,7 @@ public class UniqueDigit {
         } else {
             System.out.println(count);
         }
+        scan.close();
     }
 
     public static boolean driver(String number) {

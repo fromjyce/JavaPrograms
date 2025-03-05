@@ -49,5 +49,6 @@ public class KaprekarChecker {
         else {
             System.out.println("Not a Kaprekar Number");
         }
+        sc.close();
     }
 }

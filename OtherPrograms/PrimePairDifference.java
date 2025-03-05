@@ -8,6 +8,7 @@ public class PrimePairDifference {
             int higher = scan.nextInt();
             int count = getPrimePairs(lower, higher);
             System.out.println(count);
+            scan.close();
             
     }
 

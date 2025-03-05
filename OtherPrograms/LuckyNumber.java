@@ -27,6 +27,7 @@ public class LuckyNumber {
             sum = t;
         }
         System.out.println(sum);
+        scan.close();
     }
     
 }

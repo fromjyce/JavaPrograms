@@ -24,5 +24,6 @@ public class Wordakshari {
                 }
             }
         }
+        scan.close();
     }
 } 

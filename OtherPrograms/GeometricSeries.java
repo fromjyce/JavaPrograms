@@ -15,5 +15,6 @@ public class GeometricSeries {
                 System.out.println((i * i) - 1);
             }
         }
+        scan.close();
         }
     }

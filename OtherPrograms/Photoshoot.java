@@ -19,6 +19,7 @@ public class Photoshoot {
 
             String mess = checker(arr);
             System.out.println(mess);
+            scan.close();
         }
     }
 

@@ -43,6 +43,7 @@ public class JARProblem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         JARProblem jar = new JARProblem(10, 3);
+        scanner.close();
 
         while (true) {
             jar.displayJar();

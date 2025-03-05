@@ -10,6 +10,7 @@ public class EvenOrOdd {
         else {
             System.out.println("\nEntered number is an odd number");
         }
+        scan.close();
 
     }
     

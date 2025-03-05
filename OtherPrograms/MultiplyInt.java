@@ -11,7 +11,7 @@ public class MultiplyInt {
         System.out.print("Enter number B: ");
         num2 = scan.nextInt();
         System.out.print("Product: " + num1*num2);
-
+        scan.close();
 
     }
     

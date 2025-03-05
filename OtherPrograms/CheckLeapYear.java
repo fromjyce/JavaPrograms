@@ -10,6 +10,7 @@ public class CheckLeapYear {
         else {
             System.out.println("\n" + year + " is not a leap year");
         }
+        scan.close();
 
     }
     

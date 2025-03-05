@@ -20,5 +20,6 @@ class PalindromeChecker {
         System.out.print("Enter a word: ");
         String word = scan.nextLine();
         System.out.println(CheckPalindrome(word,ReverseString(word)));
+        scan.close();
     }
 }

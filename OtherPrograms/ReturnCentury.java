@@ -15,5 +15,6 @@ public class ReturnCentury {
         System.out.print("Enter year: ");
         int year = scan.nextInt();
         System.out.printf("Century is %d", ReturnCentury(year));
+        scan.close();
     }
 }

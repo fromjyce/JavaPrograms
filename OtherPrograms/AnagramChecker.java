@@ -41,6 +41,7 @@ public class AnagramChecker {
         } else {
             System.out.println("Not Anagrams.");
         }
+        scanner.close();
     }
     public static boolean areAnagrams(String str1, String str2) {
         str1 = str1.replaceAll("[^a-zA-Z]", "").toLowerCase();

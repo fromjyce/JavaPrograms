@@ -14,6 +14,7 @@ public class Hackthemoney {
         } else {
             System.out.println("No");
         }
+        scanner.close();
     }
 
     public static boolean canReachAmount(long N) {

@@ -10,5 +10,6 @@ public class ReadInput {
         String word;
         word = scan.nextLine();
         System.out.println(num + word);
+        scan.close();
     }
 }
