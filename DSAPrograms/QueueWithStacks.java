@@ -1,3 +1,5 @@
+package DSAPrograms;
+
 class MyQueue {
     
     private Stack<Integer> s1;
