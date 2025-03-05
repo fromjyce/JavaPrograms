@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Solution {
+public class IntersectionofTwoLL {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) {
             return null;
