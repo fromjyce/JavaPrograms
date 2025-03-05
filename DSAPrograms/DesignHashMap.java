@@ -1,3 +1,5 @@
+package DSAPrograms;
+
 class MyHashMap {
     private static final int SIZE = 10000;
     private ListNode[] map;
