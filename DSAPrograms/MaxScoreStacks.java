@@ -28,6 +28,8 @@ public class MaxScoreStacks {
     for(int i = 0; i < T; i++) {
     	System.out.println(dp[testcases[i]]);
     }
+
+    scan.close();
   
   }
 

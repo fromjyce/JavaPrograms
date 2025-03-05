@@ -29,5 +29,6 @@ public class DeleteNthNode {
         for (int num : list) {
             System.out.print(num + " ");
         }
+        scanner.close();
     }
 }

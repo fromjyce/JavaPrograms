@@ -58,5 +58,6 @@ public class LLImplementation {
 
         System.out.println("The linked list is:");
         list.display();
+        scan.close();
     }
 }

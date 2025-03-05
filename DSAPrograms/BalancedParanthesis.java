@@ -36,5 +36,6 @@ public class BalancedParanthesis {
         } else {
             System.out.println("not Balanced");
         }
+        scanner.close();
     }
 }
