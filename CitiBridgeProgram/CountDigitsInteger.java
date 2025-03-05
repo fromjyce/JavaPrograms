@@ -7,5 +7,6 @@ public class CountDigitsInteger {
     int num = scan.nextInt();
     int length = String.valueOf(num).length();
     System.out.println("Number of digits in the integer is: " + length);
+    scan.close();
 }
 }

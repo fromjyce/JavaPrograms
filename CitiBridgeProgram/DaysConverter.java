@@ -10,5 +10,6 @@ public class DaysConverter {
         int months = remainingDays / 30;
         int daysLeft = remainingDays % 30;
         System.out.println("Years: " + years + ", Months: " + months + ", Days: " + daysLeft);
+        scan.close();
     }   
 }

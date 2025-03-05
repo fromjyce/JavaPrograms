@@ -18,6 +18,7 @@ public class LargestSmallestWord {
         }
         System.out.println("Smallest word: " + smallest);
         System.out.println("Largest word: " + largest);
+        scan.close();
     }
     
 }

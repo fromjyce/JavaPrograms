@@ -23,5 +23,6 @@ public class UserDefinedException {
         } catch (InvalidPhoneNumException e) {
             System.out.println("Caught Exception: " + e.getMessage());
         }
+        scan.close();
     }
 }
