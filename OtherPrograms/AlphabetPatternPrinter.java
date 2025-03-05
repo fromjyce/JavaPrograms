@@ -15,6 +15,7 @@ class Main
 		} else {
 		    System.out.println("Invalid Input");
 		}
+		scan.close();
 	}
 	
 	public static void printPyramid(int rows) {

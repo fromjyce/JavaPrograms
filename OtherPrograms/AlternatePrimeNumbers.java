@@ -40,5 +40,6 @@ class Main
             }
             System.out.println(res);
         }
+        scan.close();
     }
 }
