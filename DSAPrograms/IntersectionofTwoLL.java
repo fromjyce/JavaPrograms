@@ -1,14 +1,16 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+package DSAPrograms;
+
+// import statement removed as ListNode is defined within the file
+
+class  ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
+
 public class IntersectionofTwoLL {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) {
