@@ -1,6 +1,4 @@
 import java.util.*;
-import java.io.*;
-import java.lang.*;
 class PalindromeChecker {
     static String ReverseString(String word) {
         StringBuffer sbr = new StringBuffer(word);

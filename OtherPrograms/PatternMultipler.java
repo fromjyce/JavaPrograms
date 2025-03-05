@@ -34,7 +34,7 @@ class Main
                 System.out.print(", ");
             }
         }
-        
+        scan.close();
     }
     
 }

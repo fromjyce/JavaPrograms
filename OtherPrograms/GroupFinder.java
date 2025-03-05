@@ -40,7 +40,7 @@ public class GroupFinder {
     }
 
     private static void dfs(int[][] grid, boolean[][] visited, int row, int col, int n, int m) {
-        Stack<int[]> stack = new Stack<>();
+        Deque<int[]> stack = new ArrayDeque<>();
         stack.push(new int[]{row, col});
         visited[row][col] = true;
 

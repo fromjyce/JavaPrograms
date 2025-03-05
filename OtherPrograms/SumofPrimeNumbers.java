@@ -17,6 +17,7 @@ class Main
                 }
             }
             System.out.println(sum);
+            scan.close();
         }
     }
     

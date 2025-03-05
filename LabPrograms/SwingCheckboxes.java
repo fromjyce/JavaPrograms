@@ -2,7 +2,6 @@
 Write a program that will display check boxes numbered from1 to 10. Use a text box to display the number of those corresponding boxes checked.
  */
 
-import java.util.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

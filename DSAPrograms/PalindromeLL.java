@@ -5,6 +5,7 @@ import java.util.List;
 
 public class PalindromeLL {
     public boolean isPalindrome(ListNode head) {
+        @SuppressWarnings({ "rawtypes", "unchecked" })
         List<Integer> list = new ArrayList();
         while(head != null) {
             list.add(head.val);

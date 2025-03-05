@@ -20,6 +20,7 @@ class Main
             int res = lcmThree(num1, num2, num3);
         System.out.println(res);
         }
+        scan.close();
         
     }
     
