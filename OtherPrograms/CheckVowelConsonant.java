@@ -15,6 +15,7 @@ public class CheckVowelConsonant {
         else {
             System.out.print("Enter a single character");
         }
+        scan.close();
 
     }
     

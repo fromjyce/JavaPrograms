@@ -47,5 +47,6 @@ public class BusesQueue {
             b++;
         }
         System.out.print(b);
+        scan.close();
     }
 }

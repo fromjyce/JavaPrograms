@@ -20,5 +20,6 @@ public class PrintPrimeInterval {
                 System.out.println(i);
             }
         }
+        scan.close();
     }
 }

@@ -37,6 +37,7 @@ public class TrapeziumPattern {
             System.out.print(rightStart + "\n");
             rightStart = rightStart - (i-1) * 2;
         }
+        sc.close();
 
     }
 }

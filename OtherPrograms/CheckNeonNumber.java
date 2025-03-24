@@ -17,5 +17,6 @@ public class CheckNeonNumber {
     else {
         System.out.println(num + " is not a neon number");
     }
+    scan.close();
 }
 }

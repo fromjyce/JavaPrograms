@@ -84,5 +84,6 @@ public class SpiralMatrixTraverse {
         for (int n : result) {
             System.out.print(n + " ");
         }
+        scan.close();
     }
 }

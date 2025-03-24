@@ -26,5 +26,6 @@ class AverageArray
 		    String s = f.substring(0, f.length() - 1);
 		    System.out.println("Average of Given Array Elements is " + s + ".");
 		}
+		scan.close();
 	}
 }

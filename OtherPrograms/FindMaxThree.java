@@ -18,6 +18,7 @@ public class FindMaxThree {
     else {
         System.out.println("\n" + c + " is the greatest number");
     }
+    scan.close();
     }
 
     

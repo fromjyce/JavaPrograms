@@ -1,6 +1,4 @@
 import java.util.*;
-import java.io.*;
-import java.lang.*;
 class PalindromeChecker {
     static String ReverseString(String word) {
         StringBuffer sbr = new StringBuffer(word);
@@ -20,5 +18,6 @@ class PalindromeChecker {
         System.out.print("Enter a word: ");
         String word = scan.nextLine();
         System.out.println(CheckPalindrome(word,ReverseString(word)));
+        scan.close();
     }
 }
